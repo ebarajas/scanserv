@@ -211,7 +211,7 @@ pct create "$CT_ID" "$TEMPLATE" \
     --cores "$CT_CORES" \
     --rootfs "${CT_STORAGE}:${CT_DISK}" \
     --net0 "$NET_STR" \
-    --unprivileged 1 \
+    --unprivileged 0 \
     --features "nesting=1,mount=cifs;nfs" \
     --start 0
 
