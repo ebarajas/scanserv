@@ -212,7 +212,7 @@ pct create "$CT_ID" "$TEMPLATE" \
     --rootfs "${CT_STORAGE}:${CT_DISK}" \
     --net0 "$NET_STR" \
     --unprivileged 1 \
-    --features nesting=1 \
+    --features "nesting=1,mount=cifs;nfs" \
     --start 0
 
 # ── Start container ──────────────────────────────────────
