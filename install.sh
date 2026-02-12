@@ -90,7 +90,7 @@ Wants=network-online.target
 After=network-online.target
 
 [Service]
-Type=simple
+Type=forking
 ExecStart=/opt/brother/scanner/brscan-skey/brscan-skey
 Restart=on-failure
 RestartSec=5
