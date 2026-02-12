@@ -82,6 +82,8 @@ fi
 
 # ── Deliver to output directory ──────────────────────────
 OUTPUT_DIR="${NAS_MOUNT}"
+# Access the directory to trigger x-systemd.automount if configured
+ls "$OUTPUT_DIR" >/dev/null 2>&1 || true
 if ! mountpoint -q "$OUTPUT_DIR" 2>/dev/null; then
     # Try to remount in case it was disconnected
     mount "$OUTPUT_DIR" 2>/dev/null || true
