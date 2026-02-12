@@ -7,8 +7,8 @@ CONFIG="/etc/scanserv/config.env"
 # shellcheck source=/dev/null
 source "$CONFIG"
 
-BRSCAN4_URL="https://download.brother.com/welcome/dlf006648/brscan4-0.4.11-1.amd64.deb"
-BRSCAN_SKEY_URL="https://download.brother.com/welcome/dlf006654/brscan-skey-0.3.2-0.amd64.deb"
+BRSCAN4_URL="https://download.brother.com/welcome/dlf105200/brscan4-0.4.11-1.amd64.deb"
+BRSCAN_SKEY_URL="https://download.brother.com/pub/com/linux/linux/packages/brscan-skey-0.3.2-0.amd64.deb"
 
 echo "==> Updating packages"
 apt-get update -qq
